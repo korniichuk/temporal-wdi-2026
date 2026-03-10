@@ -142,7 +142,7 @@ USD sell: 3.7335
 2026-03-10
 ```
 
-To navigate to Temporal Web UI to see Temporal Workflows, In the **first** terminal window, run the following command:
+To navigate to Temporal Web UI to see Temporal Workflows, in the **first** terminal window, run the following command:
 ```sh
 $ gitpod environment port open 8233 --name 8233
 ```
@@ -152,7 +152,7 @@ Example output:
 https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev
 ```
 
-Open the link from the output (e.g., `https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev`) in the new separate tab in your browser.
+Open the link from the output (e.g., `https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev`) in the new separate tab of your browser.
 
 Click on `example-workflow` Workflow ID to see Temporal Workflow History and Execution Result.
 
