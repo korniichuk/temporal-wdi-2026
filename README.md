@@ -1,8 +1,8 @@
 # Orchestrating Mission-Critical Workflows with Temporal and Python
 
 ## Table of Contents:
-- ### [Option 1: Demo with local development environment](https://github.com/korniichuk/temporal-wdi-2026?tab=readme-ov-file#option-1-demo-with-local-development-environment)
-- ### [Option 2: Demo with Gitpod (browser-based environment)](https://github.com/korniichuk/temporal-wdi-2026?tab=readme-ov-file#option-2-demo-with-gitpod-browser-based-environment)
+- ### [Option 1: Demo with local development environment](https://github.com/korniichuk/temporal-wdi-2026?tab=readme-ov-file#option-1-demo-with-local-development-environment-1)
+- ### [Option 2: Demo with Gitpod (browser-based environment)](https://github.com/korniichuk/temporal-wdi-2026?tab=readme-ov-file#option-2-demo-with-gitpod-browser-based-environment-1)
 
 ## Option 1: Demo with local development environment
 ### Step 1/4: Installation
