@@ -150,15 +150,11 @@ $ gitpod environment port open 8233 --name 8233
 Example output:
 ```sh
 https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev
-```sh
+```
 
-Open the link from the output (e.g., `https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev`) in the new separate tab in your browser:
+Open the link from the output (e.g., `https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev`) in the new separate tab in your browser.
 
-![gitpod-_-temporal_workflows.png](img/gitpod-_-temporal_workflows.png "Gitpod Temporal Workflows")
-
-Click on `example-workflow` Workflow ID to see Temporal Workflow History and Execution Result:
-
-![gitpod-_-temporal_workflow_history.png](img/gitpod-_-temporal_workflow_history.png "GitPod Temporal Workflow History")
+Click on `example-workflow` Workflow ID to see Temporal Workflow History and Execution Result.
 
 ## Sources
 - [Set up a local Temporal Service for development with Temporal CLI](https://learn.temporal.io/getting_started/python/dev_environment/?os=linux#set-up-a-local-temporal-development-cluster)
