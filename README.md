@@ -96,7 +96,7 @@ $ pip install httpx
 ### Step 2/4: Start Temporal Server
 Open a new **second** terminal window and run the following command:
 ```sh
-$ temporal server start-dev
+$ temporal server start-dev --ip 0.0.0.0 --ui-ip 0.0.0.0 --port 7233 --ui-port 8233
 ```
 
 This command starts a local Temporal Server. It starts the Web UI, creates the `default` [Namespace](https://docs.temporal.io/namespaces), and uses an in-memory database.
@@ -107,8 +107,10 @@ The Temporal Web UI will be available at http://localhost:8233.
 Leave the local Temporal Server running. You can stop the Temporal Service at any time later by pressing `Ctrl+C`.
 
 ### Step 3/4: Execute Temporal Workflow
-Open a new **third** terminal window and run the following command:
+Open a new **third** terminal window and execute the following commands:
 ```sh
+$ cd ..
+$ cd temporal-wdi-2026
 $ python3 worker.py
 ```
 
@@ -133,12 +135,22 @@ USD sell: 3.7335
 
 ![gitpod-_-terminal2.png](img/gitpod-_-terminal2.png "Gitpod Terminal window")
 
-Navigate to Temporal Web UI to see Temporal Workflows:  
-![gitpod-_-open_in_browser.png](img/gitpod-_-open_in_browser.png "Gitpod Open in browser")
+To navigate to Temporal Web UI to see Temporal Workflows, In the **first** terminal window, run the following command:
+```sh
+$ gitpod environment port open 8233 --name 8233
+```
+
+Example output:
+```sh
+https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev
+```sh
+
+Open the link from the output (e.g., `https://8233--019cd868-853b-7ed2-9862-a56d5c6d1c78.eu-central-1-01.gitpod.dev`) in the new separate tab in your browser:
 
 ![gitpod-_-temporal_workflows.png](img/gitpod-_-temporal_workflows.png "Gitpod Temporal Workflows")
 
 Click on `example-workflow` Workflow ID to see Temporal Workflow History and Execution Result:
+
 ![gitpod-_-temporal_workflow_history.png](img/gitpod-_-temporal_workflow_history.png "GitPod Temporal Workflow History")
 
 ## Sources
