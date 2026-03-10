@@ -43,7 +43,7 @@ Open a new terminal window and run the following command:
 $ temporal server start-dev
 ```
 
-This command starts a local Temporal Server. It starts the Web UI, creates the `default` [Namespace](https://docs.temporal.io/namespaces?_gl=1*c6vqdb*_gcl_au*MTIwMzc0ODY4OC4xNzMzMjU2NDU0*_ga*MTY3NTk4Mzk3MC4xNzMzMjU2NDU0*_ga_R90Q9SJD3D*MTczMzY5MjczMy45LjEuMTczMzY5MzM1My4wLjAuMA..), and uses an in-memory database.
+This command starts a local Temporal Server. It starts the Web UI, creates the `default` [Namespace](3https://docs.temporal.io/namespaces), and uses an in-memory database.
 
 The Temporal Service will be available on `localhost:7233`.
 The Temporal Web UI will be available at http://localhost:8233.
@@ -81,10 +81,10 @@ Click on `example-workflow` Workflow ID to see Temporal Workflow History and Exe
 ## Option 2: Demo with Gitpod (browser-based environment)
 Not everyone is willing to use a local environment and install software for a demo. That is why you can use the Gitpod service with a browser-based environment as an alternative.
 
-### Step 1/3: Clone GitHub repo and install [HTTPX](https://github.com/encode/httpx/) Python lib
+### Step 1/4: Clone GitHub repo and install [HTTPX](https://github.com/encode/httpx/) Python lib
 Navigate to https://gitpod.io/#https://github.com/temporalio/edu-101-python-code to launch a browser-based environment.
 
-In the **first** terminal window, execute the following command:
+Open a new **first** terminal window and execute the following commands:
 ```sh
 $ cd ..
 $ git clone https://github.com/korniichuk/temporal-wdi-2026
@@ -93,8 +93,21 @@ $ pip install httpx
 ```
 ![gitpod-_-terminal1_0001.png](img/gitpod-_-terminal1_0001.png "Gitpod Terminal window")
 
-### Step 2/3: Execute Temporal Workflow
-In the **first** terminal window, run the following command:
+### Step 2/4: Start Temporal Server
+Open a new **second** terminal window and run the following command:
+```sh
+$ temporal server start-dev
+```
+
+This command starts a local Temporal Server. It starts the Web UI, creates the `default` [Namespace](https://docs.temporal.io/namespaces), and uses an in-memory database.
+
+The Temporal Service will be available on `localhost:7233`.
+The Temporal Web UI will be available at http://localhost:8233.
+
+Leave the local Temporal Server running. You can stop the Temporal Service at any time later by pressing `Ctrl+C`.
+
+### Step 3/4: Execute Temporal Workflow
+Open a new **third** terminal window and run the following command:
 ```sh
 $ python3 worker.py
 ```
@@ -103,10 +116,9 @@ Leave the Temporal Worker running.
 
 ![gitpod-_-terminal1_0002.png](img/gitpod-_-terminal1_0002.png "Gitpod Terminal window")
 
-### Step 3/3: Execute Temporal Workflow
-In the **second** terminal window, run the following command:
+### Step 4/4: Execute Temporal Workflow
+In the **first** terminal window, run the following command:
 ```sh
-$ cd ../temporal-wdi-2026
 $ python3 app.py
 ```
 
