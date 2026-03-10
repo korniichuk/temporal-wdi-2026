@@ -84,14 +84,25 @@ Not everyone is willing to use a local environment and install software for a de
 ### Step 1/4: Clone GitHub repo and install [HTTPX](https://github.com/encode/httpx/) Python lib
 Navigate to https://gitpod.io/#https://github.com/temporalio/edu-101-python-code to launch a browser-based environment.
 
-Open a new **first** terminal window and execute the following commands:
+Click the `Create` button:
+
+![gitpod_-_create_environment.png](img/gitpod_-_create_environment.png "Gitpod: Create new environment")
+
+Change tab from the `Changes` to the `<\> Code`:
+
+![gitpod_-_code_tab.png](img/gitpod_-_code_tab.png "Gitpod: The Code tab")
+
+Click the hamburger menu (aka three-line icon) icon. Secect `Terminal`, select `New Terminal`:
+
+![gitpod_-_terminal-_new_terminal.png](img/gitpod_-_terminal-_new_terminal.png "Gitpod: Terminal -> New Terminal")
+
+In this new **first** terminal window execute the following commands:
 ```sh
 $ cd ..
 $ git clone https://github.com/korniichuk/temporal-wdi-2026
 $ cd temporal-wdi-2026
 $ pip install httpx
 ```
-![gitpod-_-terminal1_0001.png](img/gitpod-_-terminal1_0001.png "Gitpod Terminal window")
 
 ### Step 2/4: Start Temporal Server
 Open a new **second** terminal window and run the following command:
@@ -116,8 +127,6 @@ $ python3 worker.py
 
 Leave the Temporal Worker running.
 
-![gitpod-_-terminal1_0002.png](img/gitpod-_-terminal1_0002.png "Gitpod Terminal window")
-
 ### Step 4/4: Execute Temporal Workflow
 In the **first** terminal window, run the following command:
 ```sh
@@ -132,8 +141,6 @@ USD buy: 3.6595
 USD sell: 3.7335
 2026-03-10
 ```
-
-![gitpod-_-terminal2.png](img/gitpod-_-terminal2.png "Gitpod Terminal window")
 
 To navigate to Temporal Web UI to see Temporal Workflows, In the **first** terminal window, run the following command:
 ```sh
